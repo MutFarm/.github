@@ -2,5 +2,5 @@
 # Mantieni solo README.md pubblico
 *
 !README.md
-!.gitignore
-!MutFarm_Logo.png
+!profile
+!profile/img
