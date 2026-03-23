@@ -4,7 +4,7 @@
   <img src="MutFarm_Logo.png" alt="MutFarm Logo" width="200"/>
 </div>
 
-My Kubernetes playground where I break stuff and (hopefully) learn from it.
+My Kubernetes playground where I break stuff and learn from it.
 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Talos](https://img.shields.io/badge/Talos-FF6C37?style=flat-square&logo=linux&logoColor=white)
@@ -14,12 +14,12 @@ My Kubernetes playground where I break stuff and (hopefully) learn from it.
 
 ## What's this?
 
-Started this homelab to get my hands dirty with Kubernetes and DevOps stuff. No fancy cloud bills, just bare metal at home running Talos Linux. When things break (and they do), I actually learn something.
+Started this homelab to get my hands dirty with Kubernetes and DevOps stuff. No fancy cloud bills, just bare metal at home running Talos Linux. When things break, I actually learn something.
 
 ## Running on the farm
 
 **Infrastructure bits:**
-- ☸️ Kubernetes cluster on Talos Linux (3 nodes: Bela, Brina, Nerina)
+- ☸️ Kubernetes cluster on Talos Linux (3 nodes: Bela, Brina, Nerina le mie Ache <3)
 - 📦 Longhorn for storage (because I like my data distributed)
 - ⚖️ MetalLB for load balancing
 - 🔒 cert-manager + Let's Encrypt (wildcard certs via Cloudflare DNS)
