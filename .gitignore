@@ -1,0 +1,5 @@
+# GitHub config directory
+# Mantieni solo README.md pubblico
+*
+!README.md
+!.gitignore
