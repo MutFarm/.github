@@ -1,7 +1,7 @@
 # 🧑‍🌾 MutFarm Homelab
 
 <div align="center">
-  <img src="img/MutFarm_Logo.png" alt="MutFarm Logo" width="200"/>
+  <img src="../img/MutFarm_Logo.png" alt="MutFarm Logo" width="200"/>
 </div>
 
 My Kubernetes playground where I break stuff and learn from it.

@@ -2,5 +2,7 @@
 # Mantieni solo README.md pubblico
 *
 !README.md
+!img/
+!img/**
 !profile
 !profile/img
