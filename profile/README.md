@@ -12,6 +12,8 @@ My Kubernetes playground where I break stuff and learn from it.
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![Forgejo](https://img.shields.io/badge/Forgejo-FB923C?style=flat-square&logo=forgejo&logoColor=white)
 
 ---
 
@@ -30,7 +32,8 @@ Started this homelab to get my hands dirty with Kubernetes and DevOps stuff. No 
 - 🐮 Rancher for cluster management UI
 
 **Observability:**
-- 📊 kube-prometheus-stack — Prometheus, Grafana, Alertmanager, node-exporter
+- 📊 Prometheus + Grafana — metrics, dashboards, alerting
+- 🌿 Node-exporter & kube-state-metrics — cluster-level visibility
 - ⚡ Kepler — per-node & per-pod power consumption via RAPL hardware counters
 - 📧 Alert notifications via Resend SMTP to email
 
@@ -40,14 +43,17 @@ Started this homelab to get my hands dirty with Kubernetes and DevOps stuff. No 
 - 🛡️ AdGuard Home — DNS filtering & ad blocking
 - 🎮 Minecraft server
 - 📹 Bash scripts for Reolink cameras API
-- 🔧 it-tools, smtp-relay, and other self-hosted utilities
+- 🤖 AI stack — LiteLLM gateway, Ollama (local models), OpenWebUI (RAG + chat), ComfyUI (image/video gen)
+- 🔀 Forgejo — self-hosted Git forge
+- 🔧 it-tools, smtp-relay, SearXNG, and other self-hosted utilities
 
 ## The code
 
 ```
 cert-manager/               → SSL automation
 kubernetes/                 → Cluster configs and Talos setup
-kube-prometheus-stack/      → Observability stack (Prometheus, Grafana, Alertmanager)
+prometheus/                 → Prometheus deployment (metrics scraping, alerting)
+grafana/                    → Grafana dashboards
 kepler/                     → Power consumption monitoring
 kimai-export-scheduler/     → Go project (weekly/monthly time reports)
 immich/                     → Photo library deployment
@@ -56,10 +62,14 @@ reolink/                    → Camera API scripts
 minecraft/                  → Game server deployment
 rancher/                    → Management UI configs
 longhorn/                   → Storage configuration
+ai/                         → LLM stack (LiteLLM, Ollama, OpenWebUI, ComfyUI, SearXNG)
+forgejo/                    → Self-hosted Git forge
+it-tools/                   → Self-hosted utility tools
+k8s-replicator/             → Cross-namespace secret replication
 ```
 
 ## Tech
 
-Kubernetes • Talos Linux • Helm • Prometheus • Grafana • Kepler • Longhorn • MetalLB • cert-manager • ingress-nginx • Go • Docker • Bash
+Kubernetes • Talos Linux • Helm • Prometheus • Grafana • Kepler • Longhorn • MetalLB • cert-manager • ingress-nginx • Forgejo • LiteLLM • Ollama • OpenWebUI • ComfyUI • SearXNG • Go • Docker • Bash
 
 ---
